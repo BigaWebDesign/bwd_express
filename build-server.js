@@ -1,6 +1,11 @@
+var gzip = require('gzip-js'),
+    options={
+        level: 9,
+        name: '/logs/*.log',
+    }
 var favicon = require('serve-favicon');
 var app = require('express')(),
-	port = process.env.PORT || 3000,
+	port = process.env.PORT || 100,
 	morgan = require('morgan');
 
 //conf
@@ -24,7 +29,7 @@ app.use(function(req, res, next) {
   });
 app.use(function(req, res, next) {
 	res.status(500);
-	res.sendFile(__dirname + '/templates/err/404.html');
+	res.sendFile(__dirname + '/templates/err/500.html');
 });
 
 app.use(favicon(__dirname + '/favicon.png'));
