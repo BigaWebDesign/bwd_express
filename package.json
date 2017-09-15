@@ -2,7 +2,7 @@
   "name": "bwd",
   "version": "1.0.0",
   "description": "Biga Web Design",
-  "main": "server.js",
+  "main": "build-server.js",
   "scripts": {
     "dev": "node dev-server.js >> logs/logs-dev.log",
     "build": "node build-server.js >> logs/logs-prod.log"
@@ -16,5 +16,9 @@
     "serve-favicon": "^2.4.4",
     "uikit": "^3.0.0-beta.30"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-watch": "^1.0.0",
+    "grunt-contrib-pug": "^1.0.0"
+  }
 }
