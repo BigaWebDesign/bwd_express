@@ -5,7 +5,7 @@ var gzip = require('gzip-js'),
     }
 var favicon = require('serve-favicon');
 var app = require('express')(),
-	port = process.env.PORT || 100,
+	port = process.env.PORT || 80,
 	morgan = require('morgan');
 
 //conf
