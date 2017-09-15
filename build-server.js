@@ -14,7 +14,7 @@ app.use(morgan('prod'));
 //route
 app.get('/', function(req, res){
 
-res.sendFile(__dirname + '/index.html');
+res.sendFile(__dirname + '/templates/pages/index.html');
 });
 
 app.get('/hakkimizda', function(req, res){
