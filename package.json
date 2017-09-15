@@ -5,7 +5,7 @@
   "main": "build-server.js",
   "scripts": {
     "dev": "node dev-server.js >> logs/logs-dev.log",
-    "build": "node build-server.js >> logs/logs-prod.log"
+    "build": "node build-server.js"
   },
   "author": "ZX",
   "license": "MIT",
