@@ -4,7 +4,7 @@
   "description": "Biga Web Design",
   "main": "build-server.js",
   "scripts": {
-    "dev": "node dev-server.js >> logs/logs-dev.log",
+    "dev": "node dev-server.js",
     "build": "node build-server.js"
   },
   "author": "ZX",
