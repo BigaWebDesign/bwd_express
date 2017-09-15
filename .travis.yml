@@ -4,4 +4,4 @@ node_js:
 
 install: "npm install"
 
-script: "node build-server.js"
+script: "npm run build"
