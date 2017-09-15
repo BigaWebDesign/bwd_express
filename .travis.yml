@@ -4,4 +4,4 @@ node_js:
 
 install: "npm install"
 
-script: "mkdir logs && cd logs && touch logs-prod.log && cd .. && node build-server.js >> logs/logs-prod.log"
+script: "node build-server.js"
