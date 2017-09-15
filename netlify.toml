@@ -1,4 +1,5 @@
 [build]
-    command = "npm run build"
+    base = "site"
+    command = "mkdir logs && cd logs && touch logs-prod.log && cd .. && node build-server.js >> logs/logs-prod.log"
     publish = "templates/pages"
     
